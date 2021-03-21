@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas2</title>
+    <script src="jquery-3.6.0.min.js"> // memanggil library jQuery yang berada dalam satu file </script>
+    <script type="text/javascript"> //deklarasi teks javascript
+        $(document).ready(function(){ //memastikan semua ditampilkan dihalaman web
+            $("div").dblclick(function(){ //megambil selector div untuk diberi double click
+                $(this).css({background:"red"});//merubah warna backround
+            });
+        });
+    </script>
+    <style type="text/css">
+        div{
+            background: yellow;
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            }
+    </style>
+</head>
+<body>
+<h3> klik 2x pada setiap kotak untuk mengubah warnanya </h3>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="jquery-3.6.0.min.js"> // memanggil library jQuery yang berada dalam satu file </script>
+<script type="text/javascript"> //deklarasi teks javascript
+$(document).ready(function(){ //memastikan semua ditampilkan dihalaman web
+$(".sembunyi").click(function() {$("#foto").hide("slow") }); //menyembunyikan 
+$(".tampil").click(function() {$("#foto").show("slow") }); //menampilkan 
+});
+$(document).ready(function(){ //memastikan semua ditampilkan dihalaman web
+$(".sembunyi1").click(function() {$("#foto1").hide("slow") });
+$(".tampil1").click(function() {$("#foto1").show("slow") });
+});
+</script>
+</head>
+<body>
+<button class="sembunyi">sembunyikan</button>
+<button class="tampil">tampilkan</button>
+<p><img id="foto"src="image/asroma.png"></p></body>
+
+<button class="sembunyi1">sembunyikan</button>
+<button class="tampil1">tampilkan</button>
+<p><img id="foto1"src="image/foto.png"></p></body>
+</html>
